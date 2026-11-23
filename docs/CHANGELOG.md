@@ -19,3 +19,27 @@
 - **Git 提交** `b689a17 docs: apply revised course paper prose`。
 
 ---
+
+## [2026-11-23 14:37] 优化机械基础每日练习页面
+
+- **需求/问题描述**：
+  > 使用 design-taste-frontend 与 apple-design 优化 XYF/261123html/index。
+
+- **实际实现的功能与改动**：
+  - 采用每日练习册布局：桌面侧栏与双栏答题，手机底栏与单栏答题；统一系统字体、纯色层次、学习进度、表单、错题、速查和记录页面。
+  - 保留 14 道机构题、46 个牌号、固定题序与原存储键；修复清空后状态缺项、搜索特殊字符破坏输入、键盘无法切题和输入标签未关联的问题。
+  - 添加控件按压反馈、文字与颜色答题状态、弹窗焦点管理、减少动态效果及高对比支持；移除失效的外部图标引用，维持单文件直接打开。
+  - 验证：10 项真实浏览器回归全部通过，覆盖全部 14 天、140 道选择题、112 项填空、持久化、导出、错题移除、重置、键盘与弹窗。1440、768、390、320px 四页无横向溢出；320px 下全部机构标题不超过两行。file URL 与系统无障碍设置通过。
+  - 静态检查：内嵌 JavaScript 和测试模块语法检查通过；taste lint 为 0 FAIL / 1 WARN，警告仅涉及日期补零。未执行截图、视觉评分或其他目录的构建。
+
+- **涉及文件**：
+  - `XYF/261123html/index.html`
+  - `XYF/261123html/.gitignore`
+  - `XYF/261123html/tests/browser.mjs`
+  - `XYF/261123html/tests/README.md`
+  - `docs/CHANGELOG.md`
+  - 工作区持久记录：`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`，保留原有未跟踪状态。
+
+- **Git 提交**：待提交。
+
+---
