@@ -60,6 +60,6 @@
   - `docs/CHANGELOG.md`
   - 工作区记录 `memory/progress.md` 保留原有未跟踪状态。
 
-- **Git 提交**：待提交。
+- **Git 提交**：`3597556 fix: set website and iOS home screen icon`，已推送至 `origin/main`。
 
 ---
