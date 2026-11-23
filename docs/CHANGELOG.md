@@ -40,6 +40,6 @@
   - `docs/CHANGELOG.md`
   - 工作区持久记录：`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`，保留原有未跟踪状态。
 
-- **Git 提交**：待提交。
+- **Git 提交**：`07a7acd feat: refine mechanical study app design and accessibility`。
 
 ---
