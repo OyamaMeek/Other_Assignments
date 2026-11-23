@@ -43,3 +43,23 @@
 - **Git 提交**：`07a7acd feat: refine mechanical study app design and accessibility`。
 
 ---
+
+## [2026-11-23 14:56] 设置网站与 iOS 主屏幕图标
+
+- **需求/问题描述**：
+  > 将 `XYF/261123html/tubiao.PNG` 设置为网站图标和 iOS 添加到主屏幕的图标。
+
+- **实际实现的功能与改动**：
+  - 在页面 head 中添加 `icon` 与 `apple-touch-icon`，均引用同目录 `tubiao.PNG`，并纳入原始图片。
+  - 验证：HTMLParser 校验两项图标配置通过；本地 HTTP 请求均返回 200、`image/png`，响应内容与原图一致；图片为 1254×1254 PNG；`git diff --check` 通过。
+  - 未在 iOS 真机执行添加到主屏幕操作。
+
+- **涉及文件**：
+  - `XYF/261123html/index.html`
+  - `XYF/261123html/tubiao.PNG`
+  - `docs/CHANGELOG.md`
+  - 工作区记录 `memory/progress.md` 保留原有未跟踪状态。
+
+- **Git 提交**：待提交。
+
+---
